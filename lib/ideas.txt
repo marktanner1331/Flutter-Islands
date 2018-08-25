@@ -1,0 +1,84 @@
+one main island
+lots of other islands you colonize
+    unowned islands
+    owned islands
+when you start, there is an uncolonized island near you that you can conquer
+
+some kind of autonomous set up
+so that things are automatically built, maybe another building for it?
+can also send to other items on some quota
+i.e.
+    build mercenaries, until 5
+    build small merchant ships until 1
+    send 5 mercenaries to different island using 1 small merchant ship
+    send small merchant ship back
+
+pages
+    map
+    island overview
+        gold mine
+        gold refinery
+        barracks
+        shipyard
+        cannon factory
+        research facility
+            only in main island
+    owned islands
+    schedule
+        a list of all timed things ordered by when they finish
+    notifications
+    war overview
+        wont popup until you have built a ship
+
+buildings
+    gold mine
+        levels
+            levels 1 - 5 for free
+            levels 6 - 10 after researching "better pickaxes"
+            levels 11 - 15 after researching "heavy lifting equipment"
+            levels 16 - 20 after researching "explosives"
+        set notifications when you reach a certain amount of gold
+        can also be configured from the thing you want to build i.e. "notify me when I have enough gold"
+    gold refinery
+        levels 1 - 10 after researching "chemistry"
+        levels 11 - 20 after researching "micro chemistry"
+    barracks
+        levels
+            levels 1 - 20 for free
+    shipyard
+        levels 1 - 10 for free
+            allows you to build warships and small merchant ships
+            at level 10 you can build big merchant ships
+        levels 11 - 20 after "heavy lifting equipment"
+            at level 20, aircraft carriers can be built
+    cannon factory
+        levels 1 - 10 after researching explosives
+        levels 11 - 20 after researching better explosives
+    research facility
+        better pickaxes
+            heavy lifting equipment
+            chemistry
+                explosives
+                    better explosives
+                micro chemistry
+
+army
+    warships
+    small/big merchant ships
+        can transport:
+            mercenaries (1 space)
+            gold (100 per space)
+            cannons (5 spaces)
+    small merchant ship
+        5 spaces
+    big merchant ship
+        25 spaces
+    aircraft carrier?
+        basically a really powerful warship
+    mercenary
+    cannon
+    explorer
+        allows for colonization
+
+resources
+    gold
