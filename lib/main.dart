@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import "views/IslandOverview.dart";
-import "./PlayerData.dart";
+import "./Data.dart";
 
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   MyApp() {
-    PlayerData.init();
+    Data.init();
   }
 
   // This widget is the root of your application.
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: IslandOverview(island: PlayerData.mainIsland),
+      home: IslandOverview(island: Data.mainIsland),
     );
   }
 }

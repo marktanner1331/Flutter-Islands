@@ -5,6 +5,7 @@ import "package:islands/buildings/Shipyard.dart";
 import "package:islands/buildings/CannonFactory.dart";
 import "package:islands/buildings/ResearchFacility.dart";
 import "package:meta/meta.dart";
+import "package:islands/buildings/Building.dart";
 
 class Island {
   final bool isMainIsland;
@@ -32,4 +33,21 @@ class Island {
         shipyard = Shipyard(shipyardLevel),
         cannonFactory = CannonFactory(cannonFactoryLevel),
         researchFacility = ResearchFacility(researchFacilityLevel);
+
+  void sync(Duration timeSyncLastSync) {
+    for(Building building in _getAllBuildings()) {
+      building.sync(timeSyncLastSync);
+    }
+  }
+
+  List<Building> _getAllBuildings() {
+    return [
+      goldMine,
+      goldRefinery,
+      barracks,
+      shipyard,
+      cannonFactory,
+      researchFacility
+    ];
+  }
 }
