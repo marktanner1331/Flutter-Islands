@@ -1,3 +1,12 @@
+needs some way to iterate
+i.e. start again with more knowledge/better resources
+i like the idea of taking over all islands in a particular map
+    and when you are finished, move to another island group
+    and you get more resources/better research
+    so what of the current research patterns
+    we can keep the same, but the research items are only unlockable when you get to new territories?
+
+
 one main island
 lots of other islands you colonize
     unowned islands
