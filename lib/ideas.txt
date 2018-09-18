@@ -5,11 +5,12 @@ i like the idea of taking over all islands in a particular map
     and you get more resources/better research
     so what of the current research patterns
     we can keep the same, but the research items are only unlockable when you get to new territories?
-
+    that works, but maybe new territories increase the research facility level, which then unlocks the items
 
 one main island
 lots of other islands you colonize
     unowned islands
+        these will have a default amount of gold which can only be plundered once
     owned islands
 when you start, there is an uncolonized island near you that you can conquer
 
@@ -21,6 +22,8 @@ i.e.
     build small merchant ships until 1
     send 5 mercenaries to different island using 1 small merchant ship
     send small merchant ship back
+
+if buildings are upgrading then they cant make anything, i.e. gold mine produces no gold
 
 pages
     map
@@ -54,6 +57,8 @@ buildings
     barracks
         levels
             levels 1 - 20 for free
+        upgrading barracks makes training faster
+            plus unlocks new things, such as explorer
     shipyard
         levels 1 - 10 for free
             allows you to build warships and small merchant ships
@@ -64,12 +69,13 @@ buildings
         levels 1 - 10 after researching explosives
         levels 11 - 20 after researching better explosives
     research facility
-        better pickaxes
+        1 better pickaxes
             heavy lifting equipment
             chemistry
                 explosives
                     better explosives
                 micro chemistry
+            faster building
 
 army
     warships
@@ -88,6 +94,11 @@ army
     cannon
     explorer
         allows for colonization
+        at level 10 barracks
 
 resources
     gold
+
+tutorial
+    make a merchant ship and plunder another island
+

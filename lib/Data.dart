@@ -6,6 +6,11 @@ class Data {
 
   static List<Island> islands;
 
+  ///A player progresses through maps, unlocking new research opportunities
+  ///at each level
+  ///from 0 (tutorial) through to 5
+  static int currentMap = 0;
+
   static void init() {
     islands = List<Island>();
 
