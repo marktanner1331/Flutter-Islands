@@ -11,12 +11,12 @@ class Island {
   final bool isMainIsland;
   int gold;
 
-  final GoldMine goldMine;
-  final GoldRefinery goldRefinery;
-  final Barracks barracks;
-  final Shipyard shipyard;
-  final CannonFactory cannonFactory;
-  final ResearchFacility researchFacility;
+  GoldMine goldMine;
+  GoldRefinery goldRefinery;
+  Barracks barracks;
+  Shipyard shipyard;
+  CannonFactory cannonFactory;
+  ResearchFacility researchFacility;
 
   Island(
       {@required this.isMainIsland,
@@ -26,13 +26,14 @@ class Island {
       @required int barracksLevel,
       @required int shipyardLevel,
       @required int cannonFactoryLevel,
-      @required int researchFacilityLevel})
-      : goldMine = GoldMine(goldMineLevel),
-        goldRefinery = GoldRefinery(goldRefineryLevel),
-        barracks = Barracks(barracksLevel),
-        shipyard = Shipyard(shipyardLevel),
-        cannonFactory = CannonFactory(cannonFactoryLevel),
-        researchFacility = ResearchFacility(researchFacilityLevel);
+      @required int researchFacilityLevel}) {
+        goldMine = GoldMine(this, goldMineLevel);
+        goldRefinery = GoldRefinery(this, goldRefineryLevel);
+        barracks = Barracks(this, barracksLevel);
+        shipyard = Shipyard(this, shipyardLevel);
+        cannonFactory = CannonFactory(this, cannonFactoryLevel);
+        researchFacility = ResearchFacility(this, researchFacilityLevel);
+      }
 
   void sync(Duration timeSyncLastSync) {
     for(Building building in _getAllBuildings()) {

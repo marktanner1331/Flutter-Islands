@@ -8,32 +8,25 @@ import "package:islands/Data.dart";
 class ResearchFacility extends Building {
   get betterPickaxes => _betterPickaxes.isUpgraded;
   ReseachItem _betterPickaxes = ReseachItem(
-      researchFactoryLevelPrerequisite: 1,
-      upgradeDuration: Duration(hours: 1));
+      researchFactoryLevelPrerequisite: 1, upgradeDuration: Duration(hours: 1));
 
   get heavyLiftingEquipment => _heavyLiftingEquipment.isUpgraded;
   ReseachItem _heavyLiftingEquipment = ReseachItem(
-      researchFactoryLevelPrerequisite: 1,
-      upgradeDuration: Duration(hours: 1));
+      researchFactoryLevelPrerequisite: 1, upgradeDuration: Duration(hours: 1));
 
   get explosives => _explosives.isUpgraded;
   ReseachItem _explosives = ReseachItem(
-      researchFactoryLevelPrerequisite: 1,
-      upgradeDuration: Duration(hours: 1));
+      researchFactoryLevelPrerequisite: 1, upgradeDuration: Duration(hours: 1));
 
   get fasterBuilding => _fasterBuilding.isUpgraded;
   ReseachItem _fasterBuilding = ReseachItem(
-      researchFactoryLevelPrerequisite: 1,
-      upgradeDuration: Duration(hours: 1));
+      researchFactoryLevelPrerequisite: 1, upgradeDuration: Duration(hours: 1));
 
   ReseachItem _currentResearchItem;
   DateTime _currentResearchItemCompletionDate;
 
-  ResearchFacility(
-      {@required Island myIsland,
-      @required int level,
-      bool isUpgrading,
-      DateTime upgradeCompletionDate})
+  ResearchFacility(Island myIsland, int level,
+      {bool isUpgrading, DateTime upgradeCompletionDate})
       : super(
             myIsland: myIsland,
             level: level,
@@ -83,8 +76,8 @@ class ResearchFacility extends Building {
 
   @override
   void syncWhileNotUpgrading(Duration timeSinceLastSync) {
-    if(_currentResearchItem != null) {
-      if(_currentResearchItemCompletionDate.isBefore(DateTime.now())) {
+    if (_currentResearchItem != null) {
+      if (_currentResearchItemCompletionDate.isBefore(DateTime.now())) {
         _currentResearchItem.isUpgraded = true;
         _currentResearchItem = null;
         _currentResearchItemCompletionDate = null;

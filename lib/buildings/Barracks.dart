@@ -17,11 +17,8 @@ class Barracks extends Building {
   ///the time at which the current unit has finished training
   DateTime _currentlyTrainingFinishTime;
 
-  Barracks(
-      {@required Island myIsland,
-      @required int level,
-      bool isUpgrading,
-      DateTime upgradeCompletionDate})
+  Barracks(Island myIsland, int level,
+      {bool isUpgrading, DateTime upgradeCompletionDate})
       : super(
             myIsland: myIsland,
             level: level,

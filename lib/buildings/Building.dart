@@ -4,7 +4,6 @@ import "package:islands/Curves.dart";
 import "package:islands/Data.dart";
 
 abstract class Building {
-  //TODO make these private set
   int level;
   bool isUpgrading;
   DateTime upgradeCompletionDate;

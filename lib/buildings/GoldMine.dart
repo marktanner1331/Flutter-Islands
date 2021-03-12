@@ -1,15 +1,12 @@
 import "package:islands/buildings/Building.dart";
 import "package:islands/Curves.dart";
-import "package:meta/meta.dart";
 import "package:islands/Island.dart";
 
 class GoldMine extends Building {
-  int gold;
-
   GoldMine(
-      {@required Island myIsland,
-      @required int level,
-      bool isUpgrading,
+      Island myIsland,
+      int level,
+      {bool isUpgrading,
       DateTime upgradeCompletionDate})
       : super(
             myIsland: myIsland,
@@ -25,8 +22,8 @@ class GoldMine extends Building {
   @override
   void syncWhileNotUpgrading(Duration timeSinceLastSync) {
     int goldPerSync =
-        Curves.standardCurve(super.level) * timeSinceLastSync.inSeconds;
-    gold += goldPerSync;
+        Curves.standardCurve(super.level * super.myIsland.goldMine.level) * timeSinceLastSync.inSeconds;
+    super.myIsland.gold += goldPerSync;
   }
 
   @override
